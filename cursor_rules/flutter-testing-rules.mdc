@@ -1,11 +1,11 @@
 ---
 description: Specifies testing guidelines for Flutter projects, covering unit, widget, and integration tests.
-globs: test/**/*.*
+globs: test/**/*.dart
 ---
-- Write unit tests for business logic.
-- Implement widget tests for UI components.
-- Use integration tests for feature testing.
-- Implement proper mocking strategies.
-- Use proper test coverage tools.
-- Follow proper test naming conventions.
-- Implement proper CI/CD testing.
+- Write unit tests for business logic in the domain layer.
+- Implement widget tests for reusable UI components and pages.
+- Use integration tests to validate full user flows across features.
+- Apply mocking strategies with packages like mocktail or Mockito.
+- Track and improve code coverage using proper tooling.
+- Use descriptive test names and follow consistent naming conventions.
+- Integrate tests into your CI/CD pipeline to ensure automated validation.

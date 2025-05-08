@@ -9,19 +9,20 @@
 // Flutter Best Practices
 
 const flutterBestPractices = [
-    "Adapt to existing project architecture while maintaining clean code principles",
-    "Use Flutter 3.x features and Material 3 design",
-    "Implement clean architecture with BLoC pattern",
-    "Follow proper state management principles",
-    "Use proper dependency injection",
-    "Implement proper error handling",
-    "Follow platform-specific design guidelines",
-    "Use proper localization techniques",
+  "Adapt to existing project architecture while maintaining clean code principles",
+  "Use Flutter 3.x features and Material 3 design",
+  "Implement clean architecture with feature-first organization",
+  "Use Riverpod (or Flutter Hooks) for state management",
+  "Implement dependency injection using GetIt or Riverpod",
+  "Follow proper error handling using Either/Result types",
+  "Apply animation patterns using AnimatedBuilder, AnimatedSwitcher, etc.",
+  "Follow platform-specific UX guidelines (Android/iOS)",
+  "Implement localization and internationalization via Flutter's l10n tools",
 ];
 
 // Project Structure
 
-// Note: This is a reference structure. Adapt to the project's existing organization
+// Note: This is a reference structure. Adapt to the project's existing organization.
 
 const projectStructure = `
 lib/
@@ -30,22 +31,24 @@ lib/
     theme/
     utils/
     widgets/
+    services/
   features/
     feature_name/
       data/
         datasources/
         models/
-        repositories/
+        repositories_impl/
       domain/
         entities/
         repositories/
         usecases/
       presentation/
-        bloc/
+        providers/
         pages/
         widgets/
   l10n/
   main.dart
+  router.dart
 test/
   unit/
   widget/
@@ -55,52 +58,53 @@ test/
 // Coding Guidelines
 
 const codingGuidelines = `
-1. Use proper null safety practices
-2. Implement proper error handling with Either type
-3. Follow proper naming conventions
-4. Use proper widget composition
-5. Implement proper routing using GoRouter
-6. Use proper form validation
-7. Follow proper state management with BLoC
-8. Implement proper dependency injection using GetIt
-9. Use proper asset management
-10. Follow proper testing practices
+1. Use null safety throughout the app
+2. Prefer immutable data models (freezed)
+3. Apply functional error handling using Either or Result
+4. Follow Dart naming conventions (camelCase for variables, PascalCase for classes)
+5. Compose small reusable widgets
+6. Use GoRouter for declarative routing
+7. Use Riverpod's providers for app state and dependency injection
+8. Validate forms using declarative validators or custom hooks
+9. Manage assets with centralized paths/constants
+10. Maintain high test coverage (unit, widget, integration)
 `;
 
 // Widget Guidelines
 
 const widgetGuidelines = `
-1. Keep widgets small and focused
-2. Use const constructors when possible
-3. Implement proper widget keys
-4. Follow proper layout principles
-5. Use proper widget lifecycle methods
-6. Implement proper error boundaries
-7. Use proper performance optimization techniques
-8. Follow proper accessibility guidelines
+1. Create small, single-responsibility widgets
+2. Use const constructors wherever possible
+3. Use GlobalKey or ValueKey where needed for widget identification
+4. Follow responsive layout and accessibility standards
+5. Avoid deep widget nesting, use composition
+6. Animate UI changes with AnimatedSwitcher, Hero, etc.
+7. Optimize for rebuild performance using Consumer/Selector
+8. Respect accessibility (semantic labels, contrast, gestures)
 `;
 
 // Performance Guidelines
 
 const performanceGuidelines = `
-1. Use proper image caching
-2. Implement proper list view optimization
-3. Use proper build methods optimization
-4. Follow proper state management patterns
-5. Implement proper memory management
-6. Use proper platform channels when needed
-7. Follow proper compilation optimization techniques
+1. Lazy-load and cache images properly
+2. Optimize ListView/GridView with itemBuilder and cacheExtent
+3. Memoize expensive computations or selectors
+4. Minimize unnecessary widget rebuilds
+5. Dispose unused providers and controllers properly
+6. Profile with DevTools for performance bottlenecks
+7. Use platform channels judiciously for native integration
+8. Enable tree-shaking and minification for builds
 `;
 
 // Testing Guidelines
 
-const testingTestingGuidelines = `
-1. Write unit tests for business logic
-2. Implement widget tests for UI components
-3. Use integration tests for feature testing
-4. Implement proper mocking strategies
-5. Use proper test coverage tools
-6. Follow proper test naming conventions
-7. Implement proper CI/CD testing
+const testingGuidelines = `
+1. Write unit tests for domain logic and use cases
+2. Add widget tests for UI components and user flows
+3. Use integration tests for complete features (e.g., add/edit task)
+4. Mock repositories and services cleanly using mocktail or Mockito
+5. Structure test folders similar to feature folders
+6. Ensure descriptive and scoped test names
+7. Integrate CI/CD for automatic test execution
 `;
 

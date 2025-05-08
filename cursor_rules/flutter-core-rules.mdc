@@ -1,13 +1,12 @@
 ---
-description: Applies Flutter best practices and coding guidelines to the core directory, focusing on constants, themes, utilities, and widgets.
-globs: lib/core/**/*.*
+description: Applies Flutter best practices and coding guidelines to the core directory, focusing on constants, themes, utilities, and shared widgets.
+globs: lib/core/**/*.{dart}
 ---
-- Adapt to existing project architecture while maintaining clean code principles.
-- Use Flutter 3.x features and Material 3 design.
-- Implement proper null safety practices.
-- Follow proper naming conventions.
-- Use proper widget composition.
-- Keep widgets small and focused.
-- Use const constructors when possible.
-- Implement proper widget keys.
-- Follow proper layout principles.
+- Follow clean code principles aligned with the project’s architecture.
+- Use Flutter 3.x features and Material 3 theming consistently.
+- Apply null safety rigorously across utility and shared code.
+- Follow consistent and meaningful naming conventions.
+- Use small, composable widgets with a single responsibility.
+- Prefer const constructors for stateless, reusable widgets.
+- Define and use keys appropriately for widgets in lists or animated transitions.
+- Follow layout best practices using spacing, alignment, and responsive design.

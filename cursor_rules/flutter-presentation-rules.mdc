@@ -1,12 +1,13 @@
 ---
-description: Focuses on UI-related rules within Flutter feature's presentation layer, including BLoC, pages, and widgets.
-globs: lib/features/**/presentation/**/*.*
+description: Focuses on UI-related rules within Flutter feature presentation layers, including widgets, routing, and interaction design.
+globs: lib/features/**/presentation/**/*.{dart,widget.dart,page.dart}
 ---
-- Adapt to existing project architecture while maintaining clean code principles.
-- Use Flutter 3.x features and Material 3 design.
-- Follow proper widget composition.
-- Keep widgets small and focused.
-- Implement proper routing using GoRouter.
-- Use proper form validation.
-- Implement proper error boundaries.
-- Follow proper accessibility guidelines.
+- Follow existing architecture and feature boundaries while writing UI code.
+- Use Flutter 3.x and Material 3 widgets for modern UI styling and behavior.
+- Compose widgets into small, reusable components with a single responsibility.
+- Use const constructors wherever possible to improve performance.
+- Define widget keys explicitly when needed for list items or animations.
+- Use GoRouter for navigation and route-based animations.
+- Apply proper form validation with feedback to users.
+- Guard against UI crashes using error boundaries or safe fallbacks.
+- Ensure accessibility compliance: readable labels, proper contrast, touch targets, and screen reader support.

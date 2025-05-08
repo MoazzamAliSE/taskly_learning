@@ -1,12 +1,13 @@
 ---
-description: Enforces clean architecture, BLoC pattern, and state management principles within Flutter feature modules.
-globs: lib/features/**/*.*
+description: Enforces clean architecture, state management principles, and dependency injection within Flutter feature modules.
+globs: lib/features/**/{data,domain,presentation}/**/*.dart
+alwaysApply: false
 ---
-- Adapt to existing project architecture while maintaining clean code principles.
-- Use Flutter 3.x features and Material 3 design.
-- Implement clean architecture with BLoC pattern.
-- Follow proper state management principles.
-- Use proper dependency injection.
-- Implement proper error handling.
-- Follow proper state management with BLoC.
-- Implement proper dependency injection using GetIt.
+- Follow clean architecture principles: separate data, domain, and presentation layers.
+- Use Flutter 3.x features and Material 3 design system across the UI.
+- Structure feature modules using MVVM or BLoC/Riverpod as appropriate.
+- Keep business logic in ViewModels, StateNotifiers, or Blocs—not in UI widgets.
+- Apply consistent state management (Riverpod, BLoC, or StateNotifier).
+- Use dependency injection via GetIt or feature-scoped Riverpod providers.
+- Handle errors using functional patterns (e.g., Either, Result) in the domain layer.
+- Maintain consistency with the overall architectural style of the project.

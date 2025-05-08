@@ -2,11 +2,11 @@
 description: Applies general Flutter best practices across the entire project, focusing on architecture, design, and code quality.
 globs: lib/**/*.*
 ---
-- Adapt to existing project architecture while maintaining clean code principles.
-- Use Flutter 3.x features and Material 3 design.
-- Implement clean architecture with BLoC pattern.
-- Follow proper state management principles.
-- Use proper dependency injection.
-- Implement proper error handling.
-- Follow platform-specific design guidelines.
-- Use proper localization techniques.
+- Adapt to the existing architecture while maintaining clean and consistent code.
+- Use Flutter 3.x features and Material 3 design system throughout the UI.
+- Apply clean architecture principles: separation of presentation, domain, and data layers.
+- Use consistent state management (BLoC, Riverpod, or StateNotifier) based on project conventions.
+- Use dependency injection via GetIt or Riverpod for modular and testable code.
+- Implement robust and predictable error handling across layers (use Either/Result where appropriate).
+- Follow platform-specific UI/UX guidelines for Android, iOS, and web.
+- Implement localization and internationalization using Flutter's `l10n` tools and ARB files.
