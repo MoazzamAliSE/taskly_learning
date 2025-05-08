@@ -1,0 +1,79 @@
+{
+  "app": {
+    "title": "Daily Focus Tracker",
+    "version": "v1.0.0"
+  },
+  "navigation": {
+    "home": "Home",
+    "tasks": "Tasks",
+    "stats": "Stats",
+    "settings": "Settings"
+  },
+  "home": {
+    "greeting": {
+      "morning": "Good Morning",
+      "afternoon": "Good Afternoon",
+      "evening": "Good Evening"
+    },
+    "progress": {
+      "title": "Today's Progress",
+      "completed": "Completed",
+      "no_tasks": "No Tasks Yet",
+      "add_first_task": "Add your first task to start tracking your progress",
+      "add_task": "Add Task",
+      "today_tasks": "Today's Tasks"
+    }
+  },
+  "tasks": {
+    "title": "Tasks",
+    "add_new": "Add New Task",
+    "enter_title": "Enter task title",
+    "no_tasks": "No Tasks Yet",
+    "no_pending": "No Pending Tasks",
+    "all_completed": "All tasks are completed!",
+    "created": "Created {date}",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "days_ago": "{days} days ago"
+  },
+  "stats": {
+    "title": "Statistics",
+    "completion": {
+      "title": "Task Completion",
+      "complete": "Complete"
+    },
+    "summary": {
+      "title": "Task Summary",
+      "total": "Total Tasks",
+      "completed": "Completed Tasks",
+      "remaining": "Remaining Tasks"
+    },
+    "activity": {
+      "title": "Recent Activity"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": {
+      "title": "Theme",
+      "system": "System Default",
+      "light": "Light Theme",
+      "dark": "Dark Theme"
+    },
+    "language": {
+      "title": "Language",
+      "english": "English",
+      "spanish": "Español"
+    },
+    "about": {
+      "title": "About",
+      "description": "A simple and elegant way to track your daily focus tasks."
+    },
+    "help": {
+      "title": "Help & Support"
+    },
+    "privacy": {
+      "title": "Privacy Policy"
+    }
+  }
+}

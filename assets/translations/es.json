@@ -1,0 +1,79 @@
+{
+  "app": {
+    "title": "Seguimiento Diario",
+    "version": "v1.0.0"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "tasks": "Tareas",
+    "stats": "Estadísticas",
+    "settings": "Ajustes"
+  },
+  "home": {
+    "greeting": {
+      "morning": "Buenos Días",
+      "afternoon": "Buenas Tardes",
+      "evening": "Buenas Noches"
+    },
+    "progress": {
+      "title": "Progreso de Hoy",
+      "completed": "Completado",
+      "no_tasks": "Sin Tareas",
+      "add_first_task": "Añade tu primera tarea para comenzar a hacer seguimiento",
+      "add_task": "Añadir Tarea",
+      "today_tasks": "Tareas de Hoy"
+    }
+  },
+  "tasks": {
+    "title": "Tareas",
+    "add_new": "Añadir Nueva Tarea",
+    "enter_title": "Ingresa el título de la tarea",
+    "no_tasks": "Sin Tareas",
+    "no_pending": "Sin Tareas Pendientes",
+    "all_completed": "¡Todas las tareas están completadas!",
+    "created": "Creada {date}",
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "days_ago": "hace {days} días"
+  },
+  "stats": {
+    "title": "Estadísticas",
+    "completion": {
+      "title": "Completado de Tareas",
+      "complete": "Completado"
+    },
+    "summary": {
+      "title": "Resumen de Tareas",
+      "total": "Total de Tareas",
+      "completed": "Tareas Completadas",
+      "remaining": "Tareas Restantes"
+    },
+    "activity": {
+      "title": "Actividad Reciente"
+    }
+  },
+  "settings": {
+    "title": "Ajustes",
+    "theme": {
+      "title": "Tema",
+      "system": "Predeterminado del Sistema",
+      "light": "Tema Claro",
+      "dark": "Tema Oscuro"
+    },
+    "language": {
+      "title": "Idioma",
+      "english": "English",
+      "spanish": "Español"
+    },
+    "about": {
+      "title": "Acerca de",
+      "description": "Una forma simple y elegante de hacer seguimiento a tus tareas diarias."
+    },
+    "help": {
+      "title": "Ayuda y Soporte"
+    },
+    "privacy": {
+      "title": "Política de Privacidad"
+    }
+  }
+}
