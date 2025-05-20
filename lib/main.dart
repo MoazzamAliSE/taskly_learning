@@ -3,12 +3,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:taskly_learnig/features/home/presentation/pages/home_page.dart';
 import 'package:taskly_learnig/riverpod_practice/list_prov/item.dart';
 // import 'package:taskly_learnig/riverpod_practice/stateprov/homepage_prov.dart';
-import 'features/home/presentation/pages/home_page.dart';
 import 'features/tasks/presentation/pages/tasks_page.dart';
 import 'features/stats/presentation/pages/stats_page.dart';
 import 'features/settings/presentation/pages/settings_page.dart';
+import 'presentation/screens/test_logo_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +24,7 @@ void main() async {
         ],
         path: 'assets/translations',
         fallbackLocale: const Locale('en'),
-        child: const MyApp(),
+        child: const TestLogoScreen(),
       ),
     ),
   );
@@ -99,7 +100,7 @@ final _router = GoRouter(
               final currentLocation = state.uri.path;
               switch (index) {
                 case 0:
-                  context.go('/', extra: {'from': currentLocation});
+                  context.go('/logo', extra: {'from': currentLocation});
                   break;
                 case 1:
                   context.go('/tasks', extra: {'from': currentLocation});
@@ -140,6 +141,17 @@ final _router = GoRouter(
       routes: [
         GoRoute(
           path: '/',
+          pageBuilder: (context, state) => CustomTransitionPage(
+            key: state.pageKey,
+            child: const HomePage(),
+            transitionsBuilder:
+                (context, animation, secondaryAnimation, child) {
+              return FadeTransition(opacity: animation, child: child);
+            },
+          ),
+        ),
+        GoRoute(
+          path: '/logo',
           pageBuilder: (context, state) => CustomTransitionPage(
             key: state.pageKey,
             child: const Items(),
