@@ -1,0 +1,42 @@
+graph TD
+    subgraph "Firebase Structure"
+        A[Users Collection] --> B[User Document]
+        B --> C[User Profile Data]
+        B --> D[User Messages Subcollection]
+        
+        E[Admin Collection] --> F[Admin Document]
+        F --> G[Admin Profile Data]
+        F --> H[Admin Messages Subcollection]
+        
+        I[Chat Threads Collection] --> J[Thread Document]
+        J --> K[Thread Metadata]
+        J --> L[Messages Subcollection]
+    end
+
+    subgraph "Data Flow"
+        M[User App] --> N[Send Message]
+        N --> O[Create/Update Thread]
+        O --> L
+        
+        P[Admin App] --> Q[Fetch Latest Messages]
+        Q --> R[Query Threads Collection]
+        R --> S[Sort by Timestamp]
+        S --> T[Display Messages]
+    end
+
+    subgraph "Message Structure"
+        U[Message Document] --> V[Message ID]
+        U --> W[Content]
+        U --> X[Timestamp]
+        U --> Y[Sender ID]
+        U --> Z[Thread ID]
+        U --> AA[Status]
+    end
+
+    subgraph "Thread Structure"
+        AB[Thread Document] --> AC[Thread ID]
+        AB --> AD[Participants]
+        AB --> AE[Last Message]
+        AB --> AF[Last Updated]
+        AB --> AG[Status]
+    end

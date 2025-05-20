@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:taskly_learnig/riverpod_practice/list_prov/item.dart';
+// import 'package:taskly_learnig/riverpod_practice/stateprov/homepage_prov.dart';
 import 'features/home/presentation/pages/home_page.dart';
 import 'features/tasks/presentation/pages/tasks_page.dart';
 import 'features/stats/presentation/pages/stats_page.dart';
@@ -140,7 +142,7 @@ final _router = GoRouter(
           path: '/',
           pageBuilder: (context, state) => CustomTransitionPage(
             key: state.pageKey,
-            child: const HomePage(),
+            child: const Items(),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               return FadeTransition(opacity: animation, child: child);

@@ -1,0 +1,2 @@
+/Users/fantechlabsmac/learning/taskly_learnig/android/app/.cxx/Debug/d094g2l1/x86_64/CMakeFiles/edit_cache.dir
+/Users/fantechlabsmac/learning/taskly_learnig/android/app/.cxx/Debug/d094g2l1/x86_64/CMakeFiles/rebuild_cache.dir
