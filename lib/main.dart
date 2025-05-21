@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:taskly_learnig/animation_practice/animations_practice.dart';
 import 'package:taskly_learnig/features/home/presentation/pages/home_page.dart';
 import 'package:taskly_learnig/riverpod_practice/list_prov/item.dart';
 // import 'package:taskly_learnig/riverpod_practice/stateprov/homepage_prov.dart';
@@ -24,7 +25,7 @@ void main() async {
         ],
         path: 'assets/translations',
         fallbackLocale: const Locale('en'),
-        child: const TestLogoScreen(),
+        child: const TestAnimation(),
       ),
     ),
   );
