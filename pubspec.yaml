@@ -37,25 +37,38 @@ dependencies:
   flutter_animate: ^4.5.0
   easy_localization: ^3.0.7
   shared_preferences: ^2.5.3
-  intl: ^0.19.0
+  intl: ^0.20.2
   uuid: ^4.5.1
   flutter_svg: ^2.1.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  lottie: ^2.0.0
+  lottie: ^3.3.1
+  riverpod_annotation: ^2.6.1
+  analyzer: 7.3.0
+  custom_lint_visitor: 1.0.0+7.3.0
+  analyzer_plugin:
+    git: 
+      url: git@github.com:dart-lang/sdk.git
+      ref: 8c5e06206103f8b2fd7d434ece9248ce9ac31ba4
+      path: pkg/analyzer_plugin
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+dependency_overrides:
+  analyzer: 6.8.0  # Try a lower version that might be compatible
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0
+  riverpod_generator: ^2.6.5
+  build_runner: ^2.4.15
+  custom_lint: ^0.7.5
+  riverpod_lint: ^2.6.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

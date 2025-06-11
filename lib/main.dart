@@ -10,7 +10,6 @@ import 'package:taskly_learnig/riverpod_practice/list_prov/item.dart';
 import 'features/tasks/presentation/pages/tasks_page.dart';
 import 'features/stats/presentation/pages/stats_page.dart';
 import 'features/settings/presentation/pages/settings_page.dart';
-import 'presentation/screens/test_logo_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,7 +45,7 @@ class MyApp extends ConsumerWidget {
           brightness: Brightness.light,
         ),
         useMaterial3: true,
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           elevation: 2,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
@@ -63,7 +62,7 @@ class MyApp extends ConsumerWidget {
           brightness: Brightness.dark,
         ),
         useMaterial3: true,
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           elevation: 2,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
